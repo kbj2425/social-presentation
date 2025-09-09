@@ -285,22 +285,47 @@
         
         @media (max-width: 768px) {
             .slide-container {
-                height: 82vh;
+                min-height: 70vh;
+                max-height: 85vh;
                 padding: 15px;
             }
             
+            .title-slide .slide-container {
+                height: 65vh;
+                min-height: 65vh;
+            }
+            
+            .slide:nth-child(2) .slide-container,
+            .slide:nth-child(6) .slide-container {
+                height: 80vh;
+                min-height: 80vh;
+            }
+            
             .title-slide h1 {
-                font-size: 2em;
+                font-size: 2.2em;
             }
             
             .slide h2 {
-                font-size: 1.4em;
+                font-size: 1.6em;
+            }
+            
+            .slide:nth-child(5) h2 {
+                font-size: 2em;
             }
             
             .logo-showcase,
             .concept-grid {
                 grid-template-columns: 1fr;
                 gap: 10px;
+            }
+            
+            .color-palette {
+                gap: 25px;
+            }
+            
+            .color-circle {
+                width: 60px;
+                height: 60px;
             }
         }
     </style>
